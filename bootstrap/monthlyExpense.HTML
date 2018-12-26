@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="ME.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="monthlyEx.css">
+	<title>Monthly Expense</title>
+</head>
+<body>
+	<div class="container">	
+		<form class="form">
+			<h2 class="header "> Monthly Expense Report</h2>
+			<div class="row">
+				<p>The aim of this expense report is to allow people to become more financially literate!</p>
+			</div>
+			<div class="row">
+				<div class="nine columns">
+					<label for="weekly-income">Monthly Income</label>
+					<input type="number" class="u-full-width" placeholder="Income..." id="weekly-income">
+				</div>		
+			</div>
+			<div class=" underline change one column" id="change"><u>Submit/Change</u></div>
+			<hr>
+			<div class="row">
+				<h5>Expenses</h5>
+			</div>
+			<div class="row">
+				<div class="four columns">
+					<input type="text" id="expense-type" class="u-full-width" placeholder="Bill Type">
+				</div>
+				<div class="four columns">
+					<input type="number" id="amount" class="u-full-width" placeholder="Expense Amount">
+				</div>
+				<div class="two columns">
+					<div id="add-on"><i class="fas fa-plus"></i></div>
+				</div>
+			</div>			
+			<table class="u-full-width">
+				<thead>
+					<tr>
+						<th>Expense</th>
+						<th>Amount</th>
+						<th>Total Expense</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="expense-list">
+				</tbody>
+			</table>
+			<a class="button u-pull-right button-primary" id="final-submit" href = '#'>Submit</a>
+		</form>
+		</div>
+		<div class="grid summery" id="summery">
+			<div class="model-content">
+				<div class="grid-header">
+					<span class="close">&times;</span>
+					<h3>Expense Summery</h3>
+				</div>
+<hr>
+				<div class="model-body">
+					<div  class="s-grid">
+						<div class="net-income">
+							<div class="larg">
+								Gross-Income
+							</div>
+								<div class="income-value"></div>
+						</div>
+						<div class="net-expense">
+							<div class ="larg">Net-Expense</div>
+								<div class="expense-value"></div>
+						</div>
+						<div class="gross-income">
+							<div class ="larg ni">Net-Income</div>
+								<div class="net-value"></div>
+						</div>
+					</div>
+				</div>
+			<div class="grid-footer"></div>
+			<a class="button u-cf two columns button-primary" id="go-back" href ='#'>Go Back!</a>
+			</div>
+		</div>
+	<script type="text/javascript" src="me.js"></script>
+</body>
+</html>

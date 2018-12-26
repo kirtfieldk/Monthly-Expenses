@@ -1,0 +1,16 @@
+.white-space{
+	display: none;
+}
+#add-on{
+	color: green;
+	font-size: 2.3rem;
+}
+#add-on:hover{
+	color: darkgreen;
+}
+.change{
+	color: darkblue;
+}
+.change:hover{
+	color: lightblue;
+}

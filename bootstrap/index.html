@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<style type="text/css">
+		.load-text, .results{
+			display: none;
+		}
+
+		
+	</style>
+	<title>Bootstrap App</title>
+</head>
+<body class="bg-dark">
+	<div class="container card bg-success mt-5 shadow col-md-6 mx-auto ">
+		<form id="form-group">
+			<h2 class="header display-5 pb-3 text-center">Time Clock</h2>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text">Hours</span>
+				</div>
+				<input type="number" name="hours" id="hours" placeholder="Hours Worked" class="form-control">
+			</div>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text">Wage</span>
+				</div>
+				<input type="number" name="wage" id="wage" placeholder="Pay Per Hours" class="form-control">
+			</div>
+			<button class="btn-primary btn center mb-3 btn-block">Calculate Pay</button>
+
+			<div class="load-text text-danger mb-3">Note that this calculator does not take into account taxes. Now, please wait while calculations are being proccessed.</div>
+
+			<div class=" results mb-5">
+				<h4 class="display-5 pb-3 text-center">Results</h4>
+                <div class="input-group">
+                	<div class="input-group-prepend">
+						<span class="input-group-text">Weekly Pay</span>
+					</div>
+                  <input type="number" class="form-control" id="pay" disabled>
+                </div>
+              </div>
+
+		</form>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

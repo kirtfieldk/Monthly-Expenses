@@ -1,0 +1,102 @@
+.grid{
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
+	grid-template-rows: auto;	
+}
+.success{
+	background-color: white;
+	border-style: solid;
+	border-width: .5px;
+	border-color: green;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 34vh;
+}
+.failure{
+	background-color: white;
+	border-style: solid;
+	border-width: .5px;
+	border-color: red;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 34vh;
+}
+.s-grid{
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
+}
+.grid-header{
+	grid-column: 1/-1;
+	text-align: left;
+}
+.grid-footer{
+	grid-column: 1/-1;
+}
+.net-income{
+	grid-column: 2/5;
+	color: green;
+}
+.net-expense{
+	grid-column:5/7;
+	color:red;
+}
+.expense-value{
+	text-align: left;
+	font-size: 4rem;
+}
+.income-value{
+	text-align: left;
+	font-size: 4rem;
+}
+.larg{
+	font-size: 2.5rem;
+}
+.summery{
+	
+	display: none;
+	margin-top: 50px;
+	z-index: 1;
+	
+}
+
+.gross-income{
+	grid-column: 8/11;
+}
+.net-value{
+	text-align: left;
+	font-size: 4rem;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.model-content{
+	grid-column: 2/10;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  	-webkit-animation-name: animatetop;
+ 	-webkit-animation-duration: 0.4s;
+ 	animation-name: animatetop;
+  	animation-duration: 0.4s
+}
